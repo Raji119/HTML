@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input Types</title>
+    <style>
+        div{
+            background-color: orange;
+            font-family: "comic Sans MS",sans-serif;
+            padding: 10px;
+            margin: 5px;
+            width:400px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--Input Type Text-->
+    <div>
+        <form>
+            <label for="username">UserName</label>
+            <input type="text">
+        </form>
+    </div>
+    
+    <!--Input Type Password-->
+    <div>
+        <form>
+            <label for="password">Password</label>
+            <input type="password">
+        </form>
+    </div>
+
+    <!--Input Type Submit-->
+    <div>
+        <form>
+            <label for="username">UserName</label>
+            <input type="text">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!--Input Type Reset-->
+    <div>
+        <form>
+            <label for="username">UserName</label>
+            <input type="text">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+
+    <!--Input Type Radio-->
+    <div>
+        <form>
+            <label>Is HTML Easy?</label>
+            <input type="radio" value="yes" name="easy">YES
+            <!--we can mention name="" anything it is not necessary to take name="easy" only--> 
+            <!--If we dont mention name="easy"then both radio buttons can be accessed at same time-->
+            <input type="radio" value="no" name="easy">NO
+        </form>
+    </div>
+
+    <!--Input Type Chekbox-->
+    <div>
+        <form>
+            <label>Select Your Hobbies</label>
+            <input type="checkbox" value="eating">Eating
+            <input type="checkbox" value="sleeping">Sleeping
+            <input type="checkbox" value="playing">Playing
+        </form>
+    </div>
+    
+    <!--HTML5 Input Types-->
+   <h2>HTML5 Input Types</h2>
+    
+   <!--Color-->
+   <div>
+       <form>
+           <label>Select a Color</label>
+           <input type="color">
+       </form>
+   </div>
+
+   <!--Date-->
+   <div>
+       <form>
+           <label>Selecct a Date</label>
+           <input type="date">
+       </form>
+   </div>
+
+   <!--Date and Time-->
+   <div>
+       <form>
+           <label>Select Date and Time</label>
+           <input type="datetime-local">
+       </form>
+   </div>
+
+   <!--Email-->
+   <div>
+       <form>
+           <label>Enter Your Email</label>
+           <input type="email">
+           <input type="submit" value="Submit">
+       </form>
+   </div>
+
+   <!--Number-->
+   <div>
+       <form>
+           <label>Select your Number</label>
+           <input type="number">
+           <input type="submit" value="Submit">
+           <br>
+           <!--Number with Range-->
+           <label>Select your Age</label>
+           <input type="number" min="18" max="60">
+           <input type="submit" value="Submit">
+       </form>
+   </div>
+
+   <!--Range-->
+   <div>
+       <form>
+           <label>Select a Range</label>
+           <input type="range">
+           <br>
+           <!--Range with Values-->
+           <label>Select a Range</label>
+           0<input type="range" min="0" max="100">100<!--we write 0 and 100 outside tags to display them on screen-->
+       </form>
+   </div>
+
+   <!--Search -->
+   <div>
+       <form>
+           <label>Search Here</label>
+           <input type="search">
+       </form>
+   </div>
+
+   <!--Time-->
+   <div>
+       <form>
+           <label>Select a Time</label>
+           <input type="time">
+       </form>
+   </div>
+
+   <!--URL-->
+   <div>
+       <form>
+           <label>Enter Your Website URL</label>
+           <input type="url">
+           <input type="submit" value="Submit">
+       </form>
+   </div>
+
+   <!--Week-->
+   <div>
+       <form>
+           <label>Select your Week</label>
+           <input type="week">
+       </form>
+   </div>
+
+   <!--Month-->
+   <div>
+    <form>
+        <label>Select your Month</label>
+        <input type="month">
+    </form>
+</div>
+</body>
+</html>
