@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+    <style>
+        div{
+            background-color: orange;
+            font-family: "comic Sans MS",sans-serif;
+            padding: 10px;
+            margin: 5px;
+            width:400px;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Input and Label-->
+    <h2>Input and Label</h2>
+    <div>
+        <form>
+            <label for="username">UserName</label>
+            <input type="text" id="username">
+            <br>
+            <label for="password">Password</label>
+            <input type="password" id="password">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <h2> Input and Label in Table Form</h2>
+    <div>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="username">UserName</label></td>
+                    <td><input type="text" id="username"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" id="password"></td>
+               </tr>
+               <tr>
+                   <td><input type="submit" value="Submit"></td>
+               </tr>
+            </table>
+        </form>
+    </div>
+
+    <!--Select and Option-->
+    <h2>Select and Option</h2>
+    <div>
+        <form>
+            <label>Select a Language</label>
+            <select>
+                <option>HTML</option>
+                <Option>CSS</Option>
+                <option>JavaScript</option>
+                <option>JQuery</option>
+                <option>AJAX</option>
+                <option>BootStrap</option>
+                <option>Angular Js</option>
+            </select>
+        </form>
+    </div>
+    
+    <!--TextArea-->
+    <h2>Text Area</h2>
+    <div>
+        <form>
+            <label>Enter Your Message</label>
+            <textarea rows="5" cols="20"></textarea>
+        </form>
+    </div>
+
+    <!--DataList-->
+    <h2>DataList</h2>
+    <div>
+        <form>
+            <label>Select a Language</label>
+            <input list="Technologies" name="tech" >
+            <datalist id="Technologies">
+                <!--Input list name and id name shld be same-->
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JavaScript">
+                <option value="Jquery">
+                <option value="BootStrap">
+                <option value="Angular JS">
+            </datalist>
+            <input type="submit" value="Submit">
+       </form>
+    </div>
+</body>
+</html>
