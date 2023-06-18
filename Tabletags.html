@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+    <style>
+        table,th,td{
+            border: 2px solid red;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 10px;
+        }
+        #custom-table th{
+                background-color: red;
+                color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1><u>Simple Table</u></h1>
+  <table width="100%">
+      <thead>  <!--thead and tbody are optional-->
+          <tr>
+              <th>SNO </th>
+              <th>Name</th>
+              <th>Address</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>1</td>
+              <td>Sai</td>
+              <td>Raichur</td>
+          </tr>
+          <tr>
+              <td>2</td>
+              <td>Niva</td>
+              <td>Nellai</td>
+          </tr>
+          <tr>
+              <td>3</td>
+              <td>Yusra</td>
+              <td>Gulbarga</td>
+          </tr>
+      </tbody>
+  </table>  
+  <h1><u>Table with ColSpan</u></h1>
+  <table width="100%">
+      <thead>  <!--thead and tbody are optional-->
+          <tr>
+              <th>SNO </th>
+              <th colspan="2">Name and Address</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>1</td>
+              <td>Sai</td>
+              <td>Raichur</td>
+          </tr>
+          <tr>
+              <td>2</td>
+              <td>Niva</td>
+              <td>Nellai</td>
+          </tr>
+          <tr>
+              <td>3</td>
+              <td>Yusra</td>
+              <td>Gulbarga</td>
+          </tr>
+      </tbody>
+  </table>  
+  <h1><u>Table with RowSpan</u></h1>
+  <table width="100%">
+      <thead>  <!--thead and tbody are optional-->
+          <tr>
+              <th>SNO </th>
+              <th>Name</th>
+              <th>Address</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td rowspan="2">1</td>
+              <td>Sai</td>
+              <td>Raichur</td>
+          </tr>
+          <tr>
+              <td>Niva</td>
+              <td>Nellai</td>
+          </tr>
+          <tr>
+              <td>3</td>
+              <td>Yusra</td>
+              <td>Gulbarga</td>
+          </tr>
+      </tbody>
+  </table> 
+  <h1><u>Custom Table</u></h1>
+  <table width="100%" id="custom-table">
+      <thead>  <!--thead and tbody are optional-->
+          <tr>
+              <th>SNO </th>
+              <th>Name</th>
+              <th>Address</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>1</td>
+              <td>Sai</td>
+              <td>Raichur</td>
+          </tr>
+          <tr>
+              <td>2</td>
+              <td>Niva</td>
+              <td>Nellai</td>
+          </tr>
+          <tr>
+              <td>3</td>
+              <td>Yusra</td>
+              <td>Gulbarga</td>
+          </tr>
+      </tbody>
+  </table>     
+</body>
+</html>
