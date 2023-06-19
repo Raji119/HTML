@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Input Attributes</title>
+    <style>
+        div{
+            background-color: forestgreen;
+            color:white;
+            padding:10px;
+            width:400px;
+            font-family: "Comic Sans MS",sans-serif;
+            border-radius: 10PX;
+            margin: 5PX;
+        }
+    </style>
+</head>
+<body>
+    
+    <!--value attribute-->
+    <div>
+        <form>
+            <label>User Name</label>
+            <input type="text" value="Erasable">
+        </form>
+    </div>
+
+    <!--Readonly-->
+    <div>
+        <form>
+            <label>User Name</label>
+            <input type="text" value="Readonly" readonly>
+        </form>
+    </div>
+
+    <!--Disabled-->
+    <div>
+        <form>
+            <label>User Name</label>
+            <input type="text" value="Disabled" disabled>
+        </form>
+    </div>
+
+    <!--size attribute: it cant be used for checkbox, radiobuttons and some bcoz adding for those is waste-->
+    <div>
+        <form>
+            <label>User Name</label>
+            <input type="text" size="25">
+        </form>
+    </div>
+
+    <!--Rows and Cols we use for textarea only--> 
+    <div>
+        <form>
+            <label>Enter Your Message</label>
+            <textarea rows="5" cols="20"></textarea>
+        </form>
+    </div>
+   
+    <!--HTML 5 Form Attributes-->
+
+    <h3>HTML 5 Form Attributes</h3>
+
+    <!--Required-->
+    <div>
+        <form>
+            <label>User Name *</label>
+            <input type="text" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!--No validate-->
+    <div>
+        <h4>Form with validate</h4>
+       <form> 
+             <label>Enter Your Email</label>
+            <input type="email">
+             <input type="submit" value="Submit">
+       </form>
+       <h4>Form with No validate</h4>
+        <form novalidate>
+            <label>Enter Your Email</label>
+            <input type="email">
+            <input type="submit" value="Submit">
+        </form>
+        <h4>Enter Invalidate Email to identify difference</h4>
+    </div>
+
+    <!--Auto Focus-->
+    <div>
+        <form>
+            <label>User Name</label>
+            <input type="text" autofocus><!--we apply autofocus for only 1st element of the form-->
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+    <!--Pattern-->
+    <div>
+        <form>
+            <label>Twitter User Name</label>
+            <input type="text" pattern="^[A-Za-z0-9_]{1,15}$">
+            <input type="submit" value="Submit">
+            <p>We Can also Specify our own Pattern</p>
+            <p>Click Below Link to See some HTML5 Patterns </p>
+            <a href="https://www.html5pattern.com/Names">HTML5 Patterns</a>
+        </form>
+    </div>
+
+    <!--Placeholder-->
+    <div>
+        <form>
+            <label>User Name</label>
+            <input type="text" placeholder="Enter User Name">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+</html>
